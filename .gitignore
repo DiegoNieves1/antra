@@ -2,19 +2,26 @@
 
 # dependencies
 /node_modules
+/client/node_modules
+/server/node_modules
 /.pnp
 .pnp.js
 .yarn/install-state.gz
 
 # testing
 /coverage
+/client/coverage
+/server/coverage
 
 # next.js
 /.next/
+/client/.next/
 /out/
+/client/out/
 
 # production
 /build
+/client/build
 
 # misc
 .DS_Store
@@ -27,18 +34,24 @@ yarn-error.log*
 
 # local env files
 .env*.local
+/client/.env*.local
+/server/.env*.local
 
 # vercel
 .vercel
+/client/.vercel
 
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+/client/*.tsbuildinfo
+/client/next-env.d.ts
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
+/server/__pycache__/
 
 # C extensions
 *.so
@@ -166,6 +179,10 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+/client/.env
+/server/.env
+/client/.venv
+/server/.venv
 ./env
 
 # Spyder project settings
